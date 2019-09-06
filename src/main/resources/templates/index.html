@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="bg">
+<head>
+    <title>Български Календар</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <style>
+        div > div.round-border {
+            border:2px black solid;
+            padding: 10px;
+            border-radius: 12px;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        }
+
+        div > div > span.secondaryText {
+            color: #878787;
+            font-size: 1.2em
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        }
+
+        #content {
+          position:relative;
+        }
+
+        .ribbon {
+          position:absolute;
+          top:0;
+          right:0;
+        }
+
+    </style>
+
+</head>
+<body>
+<div id="content">
+    <a href="https://github.com/NewestUser/imen" class="ribbon">
+        <img width="149" height="149"
+             src="https://github.blog/wp-content/uploads/2008/12/forkme_right_red_aa0000.png?resize=149%2C149"
+             class="attachment-full size-full" alt="Fork me on GitHub"
+             data-recalc-dims="1"></a>
+</div>
+
+<div style='width: 600px'>
+    <div class="round-border">
+        <h1><span th:text="${name}"/></h1>
+        <span class="secondaryText" th:text="${name}"></span>
+    </div>
+</div>
+
+</body>
+</html>
