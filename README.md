@@ -6,7 +6,7 @@ The idea of the project is further inspired by the [Bulgarian Calendar Converter
 
 ### Running locally
 
-1. Start the application using `mvnw spring-boot:run`
+1. Start the application using `./mvnw spring-boot:run`
 
 2. Visit [localhost:8080](http://localhost:8080)
 
