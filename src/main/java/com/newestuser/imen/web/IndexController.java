@@ -13,10 +13,7 @@ public class IndexController {
     @GetMapping("/")
     public String index(Model model) {
 
-        SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE, MMMM d, yyyy");
-        Date currentDate = new Date();
-
-        model.addAttribute("name", dateFormat.format(currentDate));
+        model.addAttribute("name", BulgarianDate.returnBulgarianDate());
 
         return "index";
     }
