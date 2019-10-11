@@ -2,4 +2,986 @@ language: java
 
 sudo: false
 
-script: mvn clean verify
+script: mvnw clean verify
+Worker information
+0.19s0.01s0.00s0.01s
+Build system information
+Build language: java
+Build group: stable
+Build dist: xenial
+Build id: 131588109
+Job id: 244875074
+Runtime kernel version: 4.15.0-1037-gcp
+travis-build version: dc09426df
+Build image provisioning date and time
+Sun Aug 11 13:28:49 UTC 2019
+Operating System Details
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.6 LTS
+Release:	16.04
+Codename:	xenial
+Systemd Version
+systemd 229
+Cookbooks Version
+790f512 https://github.com/travis-ci/travis-cookbooks/tree/790f512
+git version
+git version 2.22.0
+bash version
+GNU bash, version 4.3.48(1)-release (x86_64-pc-linux-gnu)
+gcc version
+gcc (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609
+docker version
+Client:
+ Version:           18.06.0-ce
+ API version:       1.38
+ Go version:        go1.10.3
+ Git commit:        0ffa825
+ Built:             Wed Jul 18 19:11:02 2018
+ OS/Arch:           linux/amd64
+ Experimental:      false
+Server:
+ Engine:
+  Version:          18.06.0-ce
+  API version:      1.38 (minimum version 1.12)
+  Go version:       go1.10.3
+  Git commit:       0ffa825
+  Built:            Wed Jul 18 19:09:05 2018
+  OS/Arch:          linux/amd64
+  Experimental:     false
+clang version
+clang version 7.0.0 (tags/RELEASE_700/final)
+jq version
+jq-1.5
+bats version
+Bats 0.4.0
+shellcheck version
+0.6.0
+shfmt version
+v2.6.3
+ccache version
+3.2.4
+cmake version
+cmake version 3.12.4
+heroku version
+heroku/7.27.1 linux-x64 node-v11.14.0
+imagemagick version
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2019-06-15 http://www.imagemagick.org
+md5deep version
+4.4
+mercurial version
+version 4.8
+mysql version
+mysql  Ver 14.14 Distrib 5.7.27, for Linux (x86_64) using  EditLine wrapper
+openssl version
+OpenSSL 1.0.2g  1 Mar 2016
+packer version
+1.3.3
+postgresql client version
+psql (PostgreSQL) 10.10 (Ubuntu 10.10-1.pgdg16.04+1)
+ragel version
+Ragel State Machine Compiler version 6.8 Feb 2013
+sudo version
+1.8.16
+gzip version
+gzip 1.6
+zip version
+Zip 3.0
+vim version
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Jun 07 2019 15:35:43)
+iptables version
+iptables v1.6.0
+curl version
+curl 7.47.0 (x86_64-pc-linux-gnu) libcurl/7.47.0 GnuTLS/3.4.10 zlib/1.2.8 libidn/1.32 librtmp/2.3
+wget version
+GNU Wget 1.17.1 built on linux-gnu.
+rsync version
+rsync  version 3.1.1  protocol version 31
+gimme version
+v1.5.3
+nvm version
+0.34.0
+perlbrew version
+/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.86
+phpenv version
+rbenv 1.1.2-2-g4e92322
+rvm version
+rvm 1.29.9 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+default ruby version
+ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+CouchDB version
+couchdb 1.6.1
+ElasticSearch version
+5.5.0
+Installed Firefox version
+firefox 63.0.1
+MongoDB version
+MongoDB 4.0.12
+PhantomJS version
+2.1.1
+Pre-installed PostgreSQL versions
+9.4.24
+9.5.19
+9.6.15
+Redis version
+redis-server 5.0.5
+Pre-installed Go versions
+1.11.1
+ant version
+Apache Ant(TM) version 1.9.6 compiled on July 20 2018
+mvn version
+Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
+gradle version
+Gradle 5.1.1!
+lein version
+Leiningen 2.9.1 on Java 11.0.2 OpenJDK 64-Bit Server VM
+Pre-installed Node.js versions
+v10.16.2
+v11.0.0
+v4.9.1
+v6.17.1
+v8.12.0
+v8.16.0
+v8.9
+phpenv versions
+  system
+  5.6
+  5.6.40
+  7.1
+  7.1.27
+  7.2
+* 7.2.15 (set by /home/travis/.phpenv/version)
+  hhvm
+  hhvm-stable
+composer --version
+Composer version 1.8.4 2019-02-11 10:52:10
+Pre-installed Ruby versions
+ruby-2.3.8
+ruby-2.4.5
+ruby-2.5.3
+0.00s0.03s0.00s0.02s0.45s0.00s0.00s0.00s0.01s0.01s0.12s0.01s0.98s0.00s0.00s0.06s0.00s2.97s0.00s2.37s
+docker_mtu
+resolvconf
+git.checkout
+0.57s$ git clone --depth=50 --branch=travis https://github.com/dahmedov/imen.git dahmedov/imen
+0.01s$ java -Xmx32m -version
+openjdk version "11.0.2" 2019-01-15
+OpenJDK Runtime Environment 18.9 (build 11.0.2+9)
+OpenJDK 64-Bit Server VM 18.9 (build 11.0.2+9, mixed mode)
+$ javac -J-Xmx32m -version
+javac 11.0.2
+31.90s$ ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
+Maven home: /home/travis/.m2/wrapper/dists/apache-maven-3.6.0-bin/2dakv70gp803gtm5ve1ufmvttn/apache-maven-3.6.0
+Java version: 11.0.2, vendor: Oracle Corporation, runtime: /usr/local/lib/jvm/openjdk11
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-1037-gcp", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-parent/2.1.7.RELEASE/spring-boot-starter-parent-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-parent/2.1.7.RELEASE/spring-boot-starter-parent-2.1.7.RELEASE.pom (9.5 kB at 43 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-dependencies/2.1.7.RELEASE/spring-boot-dependencies-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-dependencies/2.1.7.RELEASE/spring-boot-dependencies-2.1.7.RELEASE.pom (122 kB at 2.0 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/jackson-bom/2.9.9/jackson-bom-2.9.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/jackson-bom/2.9.9/jackson-bom-2.9.9.pom (12 kB at 516 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/jackson-parent/2.9.1.2/jackson-parent-2.9.1.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/jackson-parent/2.9.1.2/jackson-parent-2.9.1.2.pom (7.9 kB at 439 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/oss-parent/34/oss-parent-34.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/oss-parent/34/oss-parent-34.pom (23 kB at 841 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/io/netty/netty-bom/4.1.38.Final/netty-bom-4.1.38.Final.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/io/netty/netty-bom/4.1.38.Final/netty-bom-4.1.38.Final.pom (7.9 kB at 466 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/oss/oss-parent/7/oss-parent-7.pom (4.8 kB at 219 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/io/projectreactor/reactor-bom/Californium-SR10/reactor-bom-Californium-SR10.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/io/projectreactor/reactor-bom/Californium-SR10/reactor-bom-Californium-SR10.pom (4.0 kB at 55 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/logging/log4j/log4j-bom/2.11.2/log4j-bom-2.11.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/logging/log4j/log4j-bom/2.11.2/log4j-bom-2.11.2.pom (6.5 kB at 103 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/logging/logging-parent/1/logging-parent-1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/logging/logging-parent/1/logging-parent-1.pom (3.2 kB at 126 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/18/apache-18.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/18/apache-18.pom (16 kB at 1.6 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/eclipse/jetty/jetty-bom/9.4.19.v20190610/jetty-bom-9.4.19.v20190610.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/eclipse/jetty/jetty-bom/9.4.19.v20190610/jetty-bom-9.4.19.v20190610.pom (18 kB at 193 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/glassfish/jersey/jersey-bom/2.27/jersey-bom-2.27.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/glassfish/jersey/jersey-bom/2.27/jersey-bom-2.27.pom (22 kB at 538 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/java/jvnet-parent/4/jvnet-parent-4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/java/jvnet-parent/4/jvnet-parent-4.pom (7.8 kB at 456 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/junit/junit-bom/5.3.2/junit-bom-5.3.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/junit/junit-bom/5.3.2/junit-bom-5.3.2.pom (4.1 kB at 49 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-framework-bom/5.1.9.RELEASE/spring-framework-bom-5.1.9.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-framework-bom/5.1.9.RELEASE/spring-framework-bom-5.1.9.RELEASE.pom (5.3 kB at 47 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/data/spring-data-releasetrain/Lovelace-SR10/spring-data-releasetrain-Lovelace-SR10.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/data/spring-data-releasetrain/Lovelace-SR10/spring-data-releasetrain-Lovelace-SR10.pom (4.7 kB at 40 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/data/build/spring-data-build/2.1.10.RELEASE/spring-data-build-2.1.10.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/data/build/spring-data-build/2.1.10.RELEASE/spring-data-build-2.1.10.RELEASE.pom (6.8 kB at 34 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/integration/spring-integration-bom/5.1.7.RELEASE/spring-integration-bom-5.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/integration/spring-integration-bom/5.1.7.RELEASE/spring-integration-bom-5.1.7.RELEASE.pom (8.7 kB at 99 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/security/spring-security-bom/5.1.6.RELEASE/spring-security-bom-5.1.6.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/security/spring-security-bom/5.1.6.RELEASE/spring-security-bom-5.1.6.RELEASE.pom (5.0 kB at 66 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/session/spring-session-bom/Bean-SR7/spring-session-bom-Bean-SR7.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/session/spring-session-bom/Bean-SR7/spring-session-bom-Bean-SR7.pom (3.0 kB at 17 kB/s)
+[INFO] 
+[INFO] ------------------------< com.newestuser:imen >-------------------------
+[INFO] Building imen 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-maven-plugin/2.1.7.RELEASE/spring-boot-maven-plugin-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-maven-plugin/2.1.7.RELEASE/spring-boot-maven-plugin-2.1.7.RELEASE.pom (4.8 kB at 55 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-tools/2.1.7.RELEASE/spring-boot-tools-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-tools/2.1.7.RELEASE/spring-boot-tools-2.1.7.RELEASE.pom (1.8 kB at 21 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-parent/2.1.7.RELEASE/spring-boot-parent-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-parent/2.1.7.RELEASE/spring-boot-parent-2.1.7.RELEASE.pom (1.8 kB at 14 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-maven-plugin/2.1.7.RELEASE/spring-boot-maven-plugin-2.1.7.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-maven-plugin/2.1.7.RELEASE/spring-boot-maven-plugin-2.1.7.RELEASE.jar (68 kB at 334 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-resources-plugin/3.1.0/maven-resources-plugin-3.1.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-resources-plugin/3.1.0/maven-resources-plugin-3.1.0.pom (7.2 kB at 156 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-plugins/31/maven-plugins-31.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-plugins/31/maven-plugins-31.pom (10 kB at 495 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/31/maven-parent-31.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/31/maven-parent-31.pom (43 kB at 3.6 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/19/apache-19.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/19/apache-19.pom (15 kB at 1.4 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-resources-plugin/3.1.0/maven-resources-plugin-3.1.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-resources-plugin/3.1.0/maven-resources-plugin-3.1.0.jar (32 kB at 1.9 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-compiler-plugin/3.8.1/maven-compiler-plugin-3.8.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-compiler-plugin/3.8.1/maven-compiler-plugin-3.8.1.pom (12 kB at 480 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-plugins/33/maven-plugins-33.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-plugins/33/maven-plugins-33.pom (11 kB at 57 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/33/maven-parent-33.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/33/maven-parent-33.pom (44 kB at 4.0 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/21/apache-21.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/21/apache-21.pom (17 kB at 1.6 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-compiler-plugin/3.8.1/maven-compiler-plugin-3.8.1.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-compiler-plugin/3.8.1/maven-compiler-plugin-3.8.1.jar (62 kB at 4.1 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-surefire-plugin/2.22.2/maven-surefire-plugin-2.22.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-surefire-plugin/2.22.2/maven-surefire-plugin-2.22.2.pom (5.0 kB at 52 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/surefire/surefire/2.22.2/surefire-2.22.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/surefire/surefire/2.22.2/surefire-2.22.2.pom (26 kB at 222 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-surefire-plugin/2.22.2/maven-surefire-plugin-2.22.2.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-surefire-plugin/2.22.2/maven-surefire-plugin-2.22.2.jar (41 kB at 386 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-jar-plugin/3.1.2/maven-jar-plugin-3.1.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-jar-plugin/3.1.2/maven-jar-plugin-3.1.2.pom (7.3 kB at 292 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-jar-plugin/3.1.2/maven-jar-plugin-3.1.2.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-jar-plugin/3.1.2/maven-jar-plugin-3.1.2.jar (28 kB at 1.0 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.pom (6.4 kB at 642 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom (9.6 kB at 562 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/24/maven-parent-24.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/24/maven-parent-24.pom (37 kB at 1.9 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/14/apache-14.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/14/apache-14.pom (15 kB at 638 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.jar (33 kB at 3.3 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-thymeleaf/2.1.7.RELEASE/spring-boot-starter-thymeleaf-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-thymeleaf/2.1.7.RELEASE/spring-boot-starter-thymeleaf-2.1.7.RELEASE.pom (2.6 kB at 45 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starters/2.1.7.RELEASE/spring-boot-starters-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starters/2.1.7.RELEASE/spring-boot-starters-2.1.7.RELEASE.pom (1.8 kB at 230 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter/2.1.7.RELEASE/spring-boot-starter-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter/2.1.7.RELEASE/spring-boot-starter-2.1.7.RELEASE.pom (3.1 kB at 220 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot/2.1.7.RELEASE/spring-boot-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot/2.1.7.RELEASE/spring-boot-2.1.7.RELEASE.pom (14 kB at 1.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-core/5.1.9.RELEASE/spring-core-5.1.9.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-core/5.1.9.RELEASE/spring-core-5.1.9.RELEASE.pom (3.6 kB at 328 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-jcl/5.1.9.RELEASE/spring-jcl-5.1.9.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-jcl/5.1.9.RELEASE/spring-jcl-5.1.9.RELEASE.pom (1.9 kB at 176 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.pom (5.7 kB at 248 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-aop/5.1.9.RELEASE/spring-aop-5.1.9.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-aop/5.1.9.RELEASE/spring-aop-5.1.9.RELEASE.pom (2.5 kB at 356 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-beans/5.1.9.RELEASE/spring-beans-5.1.9.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-beans/5.1.9.RELEASE/spring-beans-5.1.9.RELEASE.pom (2.7 kB at 304 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-expression/5.1.9.RELEASE/spring-expression-5.1.9.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-expression/5.1.9.RELEASE/spring-expression-5.1.9.RELEASE.pom (1.7 kB at 216 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-autoconfigure/2.1.7.RELEASE/spring-boot-autoconfigure-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-autoconfigure/2.1.7.RELEASE/spring-boot-autoconfigure-2.1.7.RELEASE.pom (33 kB at 2.8 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-logging/2.1.7.RELEASE/spring-boot-starter-logging-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-logging/2.1.7.RELEASE/spring-boot-starter-logging-2.1.7.RELEASE.pom (2.5 kB at 93 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.pom (13 kB at 523 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/ch/qos/logback/logback-parent/1.2.3/logback-parent-1.2.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/ch/qos/logback/logback-parent/1.2.3/logback-parent-1.2.3.pom (18 kB at 890 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.pom (4.2 kB at 381 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.pom (3.8 kB at 295 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/slf4j-parent/1.7.26/slf4j-parent-1.7.26.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/slf4j-parent/1.7.26/slf4j-parent-1.7.26.pom (14 kB at 1.5 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/logging/log4j/log4j-to-slf4j/2.11.2/log4j-to-slf4j-2.11.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/logging/log4j/log4j-to-slf4j/2.11.2/log4j-to-slf4j-2.11.2.pom (7.2 kB at 112 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/logging/log4j/log4j/2.11.2/log4j-2.11.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/logging/log4j/log4j/2.11.2/log4j-2.11.2.pom (62 kB at 908 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.pom (13 kB at 71 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/jul-to-slf4j/1.7.26/jul-to-slf4j-1.7.26.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/jul-to-slf4j/1.7.26/jul-to-slf4j-1.7.26.pom (990 B at 110 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.pom (14 kB at 1.1 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/java/jvnet-parent/3/jvnet-parent-3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/java/jvnet-parent/3/jvnet-parent-3.pom (4.8 kB at 282 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/yaml/snakeyaml/1.23/snakeyaml-1.23.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/yaml/snakeyaml/1.23/snakeyaml-1.23.pom (38 kB at 179 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/thymeleaf/thymeleaf-spring5/3.0.11.RELEASE/thymeleaf-spring5-3.0.11.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/thymeleaf/thymeleaf-spring5/3.0.11.RELEASE/thymeleaf-spring5-3.0.11.RELEASE.pom (13 kB at 168 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.pom (12 kB at 54 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.pom (10 kB at 92 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.pom (10.0 kB at 58 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.pom (14 kB at 77 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/ognl/ognl/3.1.12/ognl-3.1.12.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/ognl/ognl/3.1.12/ognl-3.1.12.pom (5.9 kB at 59 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.pom (9.8 kB at 983 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-web/2.1.7.RELEASE/spring-boot-starter-web-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-web/2.1.7.RELEASE/spring-boot-starter-web-2.1.7.RELEASE.pom (3.2 kB at 28 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-json/2.1.7.RELEASE/spring-boot-starter-json-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-json/2.1.7.RELEASE/spring-boot-starter-json-2.1.7.RELEASE.pom (3.1 kB at 347 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE.pom (12 kB at 140 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/core/jackson-databind/2.9.9/jackson-databind-2.9.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/core/jackson-databind/2.9.9/jackson-databind-2.9.9.pom (6.4 kB at 88 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/jackson-base/2.9.9/jackson-base-2.9.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/jackson-base/2.9.9/jackson-base-2.9.9.pom (5.5 kB at 500 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.pom (1.9 kB at 243 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/jackson-parent/2.9.0/jackson-parent-2.9.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/jackson-parent/2.9.0/jackson-parent-2.9.0.pom (7.8 kB at 1.1 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/oss-parent/28/oss-parent-28.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/oss-parent/28/oss-parent-28.pom (20 kB at 2.9 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/core/jackson-core/2.9.9/jackson-core-2.9.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/core/jackson-core/2.9.9/jackson-core-2.9.9.pom (4.1 kB at 508 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.9/jackson-datatype-jdk8-2.9.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.9/jackson-datatype-jdk8-2.9.9.pom (1.9 kB at 55 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/module/jackson-modules-java8/2.9.9/jackson-modules-java8-2.9.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/module/jackson-modules-java8/2.9.9/jackson-modules-java8-2.9.9.pom (2.8 kB at 55 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.9/jackson-datatype-jsr310-2.9.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.9/jackson-datatype-jsr310-2.9.9.pom (4.3 kB at 76 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.9/jackson-module-parameter-names-2.9.9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.9/jackson-module-parameter-names-2.9.9.pom (3.7 kB at 339 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-tomcat/2.1.7.RELEASE/spring-boot-starter-tomcat-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-tomcat/2.1.7.RELEASE/spring-boot-starter-tomcat-2.1.7.RELEASE.pom (3.0 kB at 298 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/tomcat/embed/tomcat-embed-core/9.0.22/tomcat-embed-core-9.0.22.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/tomcat/embed/tomcat-embed-core/9.0.22/tomcat-embed-core-9.0.22.pom (1.8 kB at 81 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/tomcat/embed/tomcat-embed-el/9.0.22/tomcat-embed-el-9.0.22.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/tomcat/embed/tomcat-embed-el/9.0.22/tomcat-embed-el-9.0.22.pom (1.5 kB at 86 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.22/tomcat-embed-websocket-9.0.22.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.22/tomcat-embed-websocket-9.0.22.pom (1.8 kB at 94 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/tomcat/tomcat-annotations-api/9.0.22/tomcat-annotations-api-9.0.22.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/tomcat/tomcat-annotations-api/9.0.22/tomcat-annotations-api-9.0.22.pom (1.5 kB at 90 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final.pom (15 kB at 650 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/hibernate/validator/hibernate-validator-parent/6.0.17.Final/hibernate-validator-parent-6.0.17.Final.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/hibernate/validator/hibernate-validator-parent/6.0.17.Final/hibernate-validator-parent-6.0.17.Final.pom (61 kB at 2.3 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/jboss/arquillian/arquillian-bom/1.1.11.Final/arquillian-bom-1.1.11.Final.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/jboss/arquillian/arquillian-bom/1.1.11.Final/arquillian-bom-1.1.11.Final.pom (11 kB at 463 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/jboss/shrinkwrap/shrinkwrap-bom/1.2.3/shrinkwrap-bom-1.2.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/jboss/shrinkwrap/shrinkwrap-bom/1.2.3/shrinkwrap-bom-1.2.3.pom (4.0 kB at 234 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.2.0/shrinkwrap-resolver-bom-2.2.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/jboss/shrinkwrap/resolver/shrinkwrap-resolver-bom/2.2.0/shrinkwrap-resolver-bom-2.2.0.pom (5.3 kB at 279 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-8/shrinkwrap-descriptors-bom-2.0.0-alpha-8.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-bom/2.0.0-alpha-8/shrinkwrap-descriptors-bom-2.0.0-alpha-8.pom (5.2 kB at 238 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.pom (12 kB at 1.3 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.pom (6.4 kB at 907 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/jboss/jboss-parent/15/jboss-parent-15.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/jboss/jboss-parent/15/jboss-parent-15.pom (32 kB at 4.5 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/classmate/1.4.0/classmate-1.4.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/classmate/1.4.0/classmate-1.4.0.pom (5.9 kB at 840 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/oss-parent/24/oss-parent-24.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/oss-parent/24/oss-parent-24.pom (19 kB at 2.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-webmvc/5.1.9.RELEASE/spring-webmvc-5.1.9.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-webmvc/5.1.9.RELEASE/spring-webmvc-5.1.9.RELEASE.pom (9.5 kB at 33 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-devtools/2.1.7.RELEASE/spring-boot-devtools-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-devtools/2.1.7.RELEASE/spring-boot-devtools-2.1.7.RELEASE.pom (5.2 kB at 53 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-test/2.1.7.RELEASE/spring-boot-starter-test-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-test/2.1.7.RELEASE/spring-boot-starter-test-2.1.7.RELEASE.pom (4.4 kB at 21 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-test/2.1.7.RELEASE/spring-boot-test-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-test/2.1.7.RELEASE/spring-boot-test-2.1.7.RELEASE.pom (7.1 kB at 285 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-test-autoconfigure/2.1.7.RELEASE/spring-boot-test-autoconfigure-2.1.7.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-test-autoconfigure/2.1.7.RELEASE/spring-boot-test-autoconfigure-2.1.7.RELEASE.pom (9.9 kB at 496 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.pom (2.6 kB at 264 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/minidev/json-smart/2.3/json-smart-2.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/minidev/json-smart/2.3/json-smart-2.3.pom (9.0 kB at 1.0 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/minidev/minidev-parent/2.3/minidev-parent-2.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/minidev/minidev-parent/2.3/minidev-parent-2.3.pom (8.5 kB at 942 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/minidev/accessors-smart/1.2/accessors-smart-1.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/minidev/accessors-smart/1.2/accessors-smart-1.2.pom (12 kB at 1.3 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/ow2/asm/asm/5.0.4/asm-5.0.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/ow2/asm/asm/5.0.4/asm-5.0.4.pom (1.9 kB at 242 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/ow2/asm/asm-parent/5.0.4/asm-parent-5.0.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/ow2/asm/asm-parent/5.0.4/asm-parent-5.0.4.pom (5.5 kB at 611 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/ow2/ow2/1.3/ow2-1.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/ow2/ow2/1.3/ow2-1.3.pom (9.5 kB at 1.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/junit/junit/4.12/junit-4.12.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/junit/junit/4.12/junit-4.12.pom (24 kB at 911 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom (766 B at 36 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/hamcrest/hamcrest-parent/1.3/hamcrest-parent-1.3.pom (2.0 kB at 179 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.pom (14 kB at 902 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/assertj/assertj-parent-pom/2.2.1/assertj-parent-pom-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/assertj/assertj-parent-pom/2.2.1/assertj-parent-pom-2.2.1.pom (15 kB at 1.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/junit/junit-bom/5.2.0/junit-bom-5.2.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/junit/junit-bom/5.2.0/junit-bom-5.2.0.pom (4.2 kB at 520 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.pom (18 kB at 2.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/bytebuddy/byte-buddy/1.9.16/byte-buddy-1.9.16.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/bytebuddy/byte-buddy/1.9.16/byte-buddy-1.9.16.pom (10 kB at 1.5 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/bytebuddy/byte-buddy-parent/1.9.16/byte-buddy-parent-1.9.16.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/bytebuddy/byte-buddy-parent/1.9.16/byte-buddy-parent-1.9.16.pom (38 kB at 2.9 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/bytebuddy/byte-buddy-agent/1.9.16/byte-buddy-agent-1.9.16.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/bytebuddy/byte-buddy-agent/1.9.16/byte-buddy-agent-1.9.16.pom (9.1 kB at 504 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/objenesis/objenesis/2.6/objenesis-2.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/objenesis/objenesis/2.6/objenesis-2.6.pom (2.8 kB at 146 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/objenesis/objenesis-parent/2.6/objenesis-parent-2.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/objenesis/objenesis-parent/2.6/objenesis-parent-2.6.pom (17 kB at 918 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.pom (820 B at 37 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.pom (5.2 kB at 739 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.pom (2.8 kB at 398 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-test/5.1.9.RELEASE/spring-test-5.1.9.RELEASE.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-test/5.1.9.RELEASE/spring-test-5.1.9.RELEASE.pom (9.9 kB at 195 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/xmlunit/xmlunit-core/2.6.3/xmlunit-core-2.6.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/xmlunit/xmlunit-core/2.6.3/xmlunit-core-2.6.3.pom (2.7 kB at 387 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/xmlunit/xmlunit-parent/2.6.3/xmlunit-parent-2.6.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/xmlunit/xmlunit-parent/2.6.3/xmlunit-parent-2.6.3.pom (18 kB at 2.3 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom (20 kB at 2.5 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom (8.1 kB at 901 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/java/jvnet-parent/5/jvnet-parent-5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/java/jvnet-parent/5/jvnet-parent-5.pom (8.9 kB at 1.3 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.pom (4.9 kB at 615 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/sun/activation/all/1.2.0/all-1.2.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/sun/activation/all/1.2.0/all-1.2.0.pom (18 kB at 2.6 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/java/jvnet-parent/1/jvnet-parent-1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/java/jvnet-parent/1/jvnet-parent-1.pom (4.7 kB at 785 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-thymeleaf/2.1.7.RELEASE/spring-boot-starter-thymeleaf-2.1.7.RELEASE.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-logging/2.1.7.RELEASE/spring-boot-starter-logging-2.1.7.RELEASE.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter/2.1.7.RELEASE/spring-boot-starter-2.1.7.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter/2.1.7.RELEASE/spring-boot-starter-2.1.7.RELEASE.jar (397 B at 3.7 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/logging/log4j/log4j-to-slf4j/2.11.2/log4j-to-slf4j-2.11.2.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/logging/log4j/log4j-to-slf4j/2.11.2/log4j-to-slf4j-2.11.2.jar (18 kB at 150 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar (472 kB at 3.0 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/jul-to-slf4j/1.7.26/jul-to-slf4j-1.7.26.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-thymeleaf/2.1.7.RELEASE/spring-boot-starter-thymeleaf-2.1.7.RELEASE.jar (407 B at 1.9 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/logging/log4j/log4j-api/2.11.2/log4j-api-2.11.2.jar (266 kB at 1.3 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-logging/2.1.7.RELEASE/spring-boot-starter-logging-2.1.7.RELEASE.jar (405 B at 1.9 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/thymeleaf/thymeleaf-spring5/3.0.11.RELEASE/thymeleaf-spring5-3.0.11.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar (290 kB at 1.3 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar (27 kB at 110 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/thymeleaf/thymeleaf-spring5/3.0.11.RELEASE/thymeleaf-spring5-3.0.11.RELEASE.jar (177 kB at 611 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/yaml/snakeyaml/1.23/snakeyaml-1.23.jar (301 kB at 1.0 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/attoparser/attoparser/2.0.5.RELEASE/attoparser-2.0.5.RELEASE.jar (245 kB at 763 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/jul-to-slf4j/1.7.26/jul-to-slf4j-1.7.26.jar (4.6 kB at 14 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-web/2.1.7.RELEASE/spring-boot-starter-web-2.1.7.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.4.RELEASE/thymeleaf-extras-java8time-3.0.4.RELEASE.jar (40 kB at 113 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-json/2.1.7.RELEASE/spring-boot-starter-json-2.1.7.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-json/2.1.7.RELEASE/spring-boot-starter-json-2.1.7.RELEASE.jar (403 B at 1.1 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/core/jackson-databind/2.9.9/jackson-databind-2.9.9.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar (41 kB at 105 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar (67 kB at 161 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/core/jackson-core/2.9.9/jackson-core-2.9.9.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar (174 kB at 384 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.9/jackson-datatype-jdk8-2.9.9.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.jar (870 kB at 1.9 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.9/jackson-datatype-jsr310-2.9.9.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.9/jackson-datatype-jdk8-2.9.9.jar (33 kB at 69 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.9/jackson-module-parameter-names-2.9.9.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.9/jackson-datatype-jsr310-2.9.9.jar (101 kB at 199 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.9/jackson-module-parameter-names-2.9.9.jar (8.6 kB at 17 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-tomcat/2.1.7.RELEASE/spring-boot-starter-tomcat-2.1.7.RELEASE.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/tomcat/embed/tomcat-embed-core/9.0.22/tomcat-embed-core-9.0.22.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-web/2.1.7.RELEASE/spring-boot-starter-web-2.1.7.RELEASE.jar (403 B at 760 B/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/tomcat/embed/tomcat-embed-el/9.0.22/tomcat-embed-el-9.0.22.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/core/jackson-core/2.9.9/jackson-core-2.9.9.jar (326 kB at 604 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.22/tomcat-embed-websocket-9.0.22.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-tomcat/2.1.7.RELEASE/spring-boot-starter-tomcat-2.1.7.RELEASE.jar (404 B at 739 B/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/tomcat/embed/tomcat-embed-el/9.0.22/tomcat-embed-el-9.0.22.jar (250 kB at 422 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.22/tomcat-embed-websocket-9.0.22.jar (265 kB at 426 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar (66 kB at 103 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar (93 kB at 143 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/classmate/1.4.0/classmate-1.4.0.jar (67 kB at 99 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-beans/5.1.9.RELEASE/spring-beans-5.1.9.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/fasterxml/jackson/core/jackson-databind/2.9.9/jackson-databind-2.9.9.jar (1.3 MB at 1.9 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-webmvc/5.1.9.RELEASE/spring-webmvc-5.1.9.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/hibernate/validator/hibernate-validator/6.0.17.Final/hibernate-validator-6.0.17.Final.jar (1.2 MB at 1.6 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-aop/5.1.9.RELEASE/spring-aop-5.1.9.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-aop/5.1.9.RELEASE/spring-aop-5.1.9.RELEASE.jar (369 kB at 452 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-beans/5.1.9.RELEASE/spring-beans-5.1.9.RELEASE.jar (674 kB at 825 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-expression/5.1.9.RELEASE/spring-expression-5.1.9.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-webmvc/5.1.9.RELEASE/spring-webmvc-5.1.9.RELEASE.jar (801 kB at 907 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-devtools/2.1.7.RELEASE/spring-boot-devtools-2.1.7.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-expression/5.1.9.RELEASE/spring-expression-5.1.9.RELEASE.jar (281 kB at 311 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot/2.1.7.RELEASE/spring-boot-2.1.7.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE.jar (1.4 MB at 1.5 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-autoconfigure/2.1.7.RELEASE/spring-boot-autoconfigure-2.1.7.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-devtools/2.1.7.RELEASE/spring-boot-devtools-2.1.7.RELEASE.jar (211 kB at 205 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-test/2.1.7.RELEASE/spring-boot-starter-test-2.1.7.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-starter-test/2.1.7.RELEASE/spring-boot-starter-test-2.1.7.RELEASE.jar (402 B at 358 B/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-test/2.1.7.RELEASE/spring-boot-test-2.1.7.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar (1.1 MB at 958 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-test-autoconfigure/2.1.7.RELEASE/spring-boot-test-autoconfigure-2.1.7.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-test/2.1.7.RELEASE/spring-boot-test-2.1.7.RELEASE.jar (197 kB at 166 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-test-autoconfigure/2.1.7.RELEASE/spring-boot-test-autoconfigure-2.1.7.RELEASE.jar (172 kB at 145 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/minidev/json-smart/2.3/json-smart-2.3.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot-autoconfigure/2.1.7.RELEASE/spring-boot-autoconfigure-2.1.7.RELEASE.jar (1.3 MB at 1.0 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar (30 kB at 25 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/tomcat/embed/tomcat-embed-core/9.0.22/tomcat-embed-core-9.0.22.jar (3.3 MB at 2.7 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/junit/junit/4.12/junit-4.12.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar (223 kB at 178 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar (53 kB at 42 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/minidev/json-smart/2.3/json-smart-2.3.jar (120 kB at 95 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/bytebuddy/byte-buddy/1.9.16/byte-buddy-1.9.16.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/junit/junit/4.12/junit-4.12.jar (315 kB at 243 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/bytebuddy/byte-buddy-agent/1.9.16/byte-buddy-agent-1.9.16.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/boot/spring-boot/2.1.7.RELEASE/spring-boot-2.1.7.RELEASE.jar (956 kB at 713 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/objenesis/objenesis/2.6/objenesis-2.6.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/objenesis/objenesis/2.6/objenesis-2.6.jar (56 kB at 41 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar (45 kB at 33 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar (565 kB at 408 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/bytebuddy/byte-buddy-agent/1.9.16/byte-buddy-agent-1.9.16.jar (247 kB at 177 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar (18 kB at 13 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-core/5.1.9.RELEASE/spring-core-5.1.9.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/skyscreamer/jsonassert/1.5.0/jsonassert-1.5.0.jar (30 kB at 21 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-jcl/5.1.9.RELEASE/spring-jcl-5.1.9.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar (53 kB at 37 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-test/5.1.9.RELEASE/spring-test-5.1.9.RELEASE.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-jcl/5.1.9.RELEASE/spring-jcl-5.1.9.RELEASE.jar (24 kB at 16 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/xmlunit/xmlunit-core/2.6.3/xmlunit-core-2.6.3.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-test/5.1.9.RELEASE/spring-test-5.1.9.RELEASE.jar (620 kB at 410 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/xmlunit/xmlunit-core/2.6.3/xmlunit-core-2.6.3.jar (168 kB at 110 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/springframework/spring-core/5.1.9.RELEASE/spring-core-5.1.9.RELEASE.jar (1.3 MB at 845 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar (128 kB at 82 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar (57 kB at 36 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/net/bytebuddy/byte-buddy/1.9.16/byte-buddy-1.9.16.jar (3.3 MB at 2.1 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar (4.1 MB at 2.5 MB/s)
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ imen ---
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.pom (2.3 kB at 114 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven/3.0/maven-3.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven/3.0/maven-3.0.pom (22 kB at 755 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/15/maven-parent-15.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/15/maven-parent-15.pom (24 kB at 667 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/6/apache-6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/6/apache-6.pom (13 kB at 1.4 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-model/3.0/maven-model-3.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-model/3.0/maven-model-3.0.pom (3.9 kB at 556 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.pom (3.3 kB at 303 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom (17 kB at 175 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.pom (1.9 kB at 241 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.pom (5.4 kB at 537 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/inject/guice-plexus/1.4.2/guice-plexus-1.4.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/inject/guice-plexus/1.4.2/guice-plexus-1.4.2.pom (3.1 kB at 95 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/inject/guice-bean/1.4.2/guice-bean-1.4.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/inject/guice-bean/1.4.2/guice-bean-1.4.2.pom (2.6 kB at 31 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/sisu-inject/1.4.2/sisu-inject-1.4.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/sisu-inject/1.4.2/sisu-inject-1.4.2.pom (1.2 kB at 114 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/sisu-parent/1.4.2/sisu-parent-1.4.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/sisu-parent/1.4.2/sisu-parent-1.4.2.pom (7.8 kB at 194 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/forge/forge-parent/6/forge-parent-6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/forge/forge-parent/6/forge-parent-6.pom (11 kB at 978 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-component-annotations/1.7.1/plexus-component-annotations-1.7.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-component-annotations/1.7.1/plexus-component-annotations-1.7.1.pom (770 B at 43 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-containers/1.7.1/plexus-containers-1.7.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-containers/1.7.1/plexus-containers-1.7.1.pom (5.0 kB at 126 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus/4.0/plexus-4.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus/4.0/plexus-4.0.pom (22 kB at 1.3 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/forge/forge-parent/10/forge-parent-10.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/forge/forge-parent/10/forge-parent-10.pom (14 kB at 798 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.pom (4.0 kB at 190 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom (3.3 kB at 303 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.pom (5.5 kB at 606 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7.pom (11 kB at 1.8 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-core/3.0/maven-core-3.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-core/3.0/maven-core-3.0.pom (6.6 kB at 829 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-settings/3.0/maven-settings-3.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-settings/3.0/maven-settings-3.0.pom (1.9 kB at 269 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.pom (2.2 kB at 50 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.pom (910 B at 114 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-components/1.1.18/plexus-components-1.1.18.pom (5.4 kB at 137 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus/2.0.7/plexus-2.0.7.pom (17 kB at 1.9 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.pom (3.0 kB at 96 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/spice/spice-parent/12/spice-parent-12.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/spice/spice-parent/12/spice-parent-12.pom (6.8 kB at 358 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/forge/forge-parent/4/forge-parent-4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/forge/forge-parent/4/forge-parent-4.pom (8.4 kB at 1.4 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom (5.1 kB at 735 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom (9.0 kB at 157 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.pom (2.1 kB at 295 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.pom (1.9 kB at 276 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.pom (2.2 kB at 102 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.pom (2.5 kB at 48 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-api/1.7/aether-api-1.7.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-api/1.7/aether-api-1.7.pom (1.7 kB at 120 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-parent/1.7/aether-parent-1.7.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-parent/1.7/aether-parent-1.7.pom (7.7 kB at 515 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-util/1.7/aether-util-1.7.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-util/1.7/aether-util-1.7.pom (2.1 kB at 187 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.pom (3.7 kB at 103 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.pom (1.7 kB at 193 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.pom (4.7 kB at 108 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-filtering/3.1.1/maven-filtering-3.1.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-filtering/3.1.1/maven-filtering-3.1.1.pom (5.7 kB at 118 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-components/30/maven-shared-components-30.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-components/30/maven-shared-components-30.pom (4.6 kB at 58 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/30/maven-parent-30.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/30/maven-parent-30.pom (41 kB at 5.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.pom (5.6 kB at 698 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-components/21/maven-shared-components-21.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-components/21/maven-shared-components-21.pom (5.1 kB at 284 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/25/maven-parent-25.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/25/maven-parent-25.pom (37 kB at 913 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/15/apache-15.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/15/apache-15.pom (15 kB at 1.1 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/commons-io/commons-io/2.4/commons-io-2.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/commons-io/commons-io/2.4/commons-io-2.4.pom (10 kB at 726 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/commons/commons-parent/25/commons-parent-25.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/commons/commons-parent/25/commons-parent-25.pom (48 kB at 3.5 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/9/apache-9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/9/apache-9.pom (15 kB at 505 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.pom (965 B at 40 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.pom (4.1 kB at 516 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-interpolation/1.22/plexus-interpolation-1.22.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-interpolation/1.22/plexus-interpolation-1.22.pom (1.5 kB at 256 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-components/1.3.1/plexus-components-1.3.1.pom (3.1 kB at 613 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus/3.3.1/plexus-3.3.1.pom (20 kB at 256 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/spice/spice-parent/17/spice-parent-17.pom (6.8 kB at 966 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.pom (3.2 kB at 107 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/spice/spice-parent/15/spice-parent-15.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/spice/spice-parent/15/spice-parent-15.pom (8.4 kB at 1.4 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/forge/forge-parent/5/forge-parent-5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/forge/forge-parent/5/forge-parent-5.pom (8.4 kB at 1.7 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.pom (8.1 kB at 384 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom (12 kB at 1.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/commons-io/commons-io/2.5/commons-io-2.5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/commons-io/commons-io/2.5/commons-io-2.5.pom (13 kB at 458 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/commons/commons-parent/39/commons-parent-39.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/commons/commons-parent/39/commons-parent-39.pom (62 kB at 646 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/16/apache-16.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/16/apache-16.pom (15 kB at 2.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-interpolation/1.24/plexus-interpolation-1.24.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-interpolation/1.24/plexus-interpolation-1.24.pom (2.6 kB at 328 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar (52 kB at 2.6 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-core/3.0/maven-core-3.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar (49 kB at 1.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-settings/3.0/maven-settings-3.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar (202 kB at 4.7 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar (153 kB at 2.8 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-settings/3.0/maven-settings-3.0.jar (47 kB at 1.1 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.jar (38 kB at 484 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.jar (30 kB at 396 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.jar (148 kB at 1.4 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.jar (51 kB at 483 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar (472 kB at 4.3 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-util/1.7/aether-util-1.7.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-api/1.7/aether-api-1.7.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.jar (106 kB at 932 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.jar (14 kB at 106 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-component-annotations/1.7.1/plexus-component-annotations-1.7.1.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-util/1.7/aether-util-1.7.jar (108 kB at 800 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar (46 kB at 334 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/aether/aether-api/1.7/aether-api-1.7.jar (74 kB at 545 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-component-annotations/1.7.1/plexus-component-annotations-1.7.1.jar (4.3 kB at 30 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-model/3.0/maven-model-3.0.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-core/3.0/maven-core-3.0.jar (527 kB at 3.5 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-filtering/3.1.1/maven-filtering-3.1.1.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-filtering/3.1.1/maven-filtering-3.1.1.jar (51 kB at 320 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar (13 kB at 84 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar (29 kB at 176 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar (32 kB at 179 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/commons-io/commons-io/2.5/commons-io-2.5.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-model/3.0/maven-model-3.0.jar (165 kB at 905 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar (8.5 kB at 47 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-interpolation/1.24/plexus-interpolation-1.24.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.jar (262 kB at 1.3 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/commons-io/commons-io/2.5/commons-io-2.5.jar (209 kB at 1.0 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-utils/3.0.0/maven-shared-utils-3.0.0.jar (155 kB at 682 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-interpolation/1.24/plexus-interpolation-1.24.jar (79 kB at 339 kB/s)
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ imen ---
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.pom (5.6 kB at 939 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom (4.7 kB at 176 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom (6.4 kB at 187 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/23/maven-parent-23.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/23/maven-parent-23.pom (33 kB at 881 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/13/apache-13.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/13/apache-13.pom (14 kB at 399 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.pom (1.5 kB at 32 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven/2.2.1/maven-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven/2.2.1/maven-2.2.1.pom (22 kB at 1.5 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/11/maven-parent-11.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/11/maven-parent-11.pom (32 kB at 1.7 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/5/apache-5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/5/apache-5.pom (4.1 kB at 65 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.pom (12 kB at 554 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.pom (2.2 kB at 41 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.pom (3.2 kB at 105 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.pom (6.8 kB at 82 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.pom (889 B at 68 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom (5.8 kB at 649 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.pom (2.0 kB at 32 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.pom (1.9 kB at 237 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/slf4j-parent/1.5.6/slf4j-parent-1.5.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/slf4j-parent/1.5.6/slf4j-parent-1.5.6.pom (7.9 kB at 141 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.pom (3.0 kB at 249 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/slf4j/jcl-over-slf4j/1.5.6/jcl-over-slf4j-1.5.6.pom (2.2 kB at 271 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.pom (2.2 kB at 145 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.pom (1.6 kB at 122 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.pom (1.9 kB at 72 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.pom (1.7 kB at 61 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.pom (2.8 kB at 103 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom (3.1 kB at 183 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.pom (880 B at 25 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.pom (1.9 kB at 84 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.pom (2.1 kB at 37 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.pom (1.3 kB at 50 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.pom (4.0 kB at 62 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-components/18/maven-shared-components-18.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-components/18/maven-shared-components-18.pom (4.9 kB at 705 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/22/maven-parent-22.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/maven-parent/22/maven-parent-22.pom (30 kB at 2.0 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/11/apache-11.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/apache/11/apache-11.pom (15 kB at 1.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-java/0.9.10/plexus-java-0.9.10.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-java/0.9.10/plexus-java-0.9.10.pom (5.1 kB at 81 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-languages/0.9.10/plexus-languages-0.9.10.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-languages/0.9.10/plexus-languages-0.9.10.pom (4.1 kB at 70 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/ow2/asm/asm/6.2/asm-6.2.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/ow2/asm/asm/6.2/asm-6.2.pom (2.9 kB at 109 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/ow2/ow2/1.5/ow2-1.5.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/ow2/ow2/1.5/ow2-1.5.pom (11 kB at 2.2 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/thoughtworks/qdox/qdox/2.0-M9/qdox-2.0-M9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/thoughtworks/qdox/qdox/2.0-M9/qdox-2.0-M9.pom (16 kB at 546 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/sonatype/oss/oss-parent/9/oss-parent-9.pom (6.6 kB at 104 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-compiler-api/2.8.4/plexus-compiler-api-2.8.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-compiler-api/2.8.4/plexus-compiler-api-2.8.4.pom (867 B at 144 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-compiler/2.8.4/plexus-compiler-2.8.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-compiler/2.8.4/plexus-compiler-2.8.4.pom (6.0 kB at 201 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-components/4.0/plexus-components-4.0.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-components/4.0/plexus-components-4.0.pom (2.7 kB at 380 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.pom (3.8 kB at 547 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-compiler-manager/2.8.4/plexus-compiler-manager-2.8.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-compiler-manager/2.8.4/plexus-compiler-manager-2.8.4.pom (692 B at 4.7 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-compiler-javac/2.8.4/plexus-compiler-javac-2.8.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-compiler-javac/2.8.4/plexus-compiler-javac-2.8.4.pom (771 B at 30 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-compilers/2.8.4/plexus-compilers-2.8.4.pom
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-compilers/2.8.4/plexus-compilers-2.8.4.pom (1.3 kB at 224 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar (14 kB at 713 kB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-java/0.9.10/plexus-java-0.9.10.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/ow2/asm/asm/6.2/asm-6.2.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/ow2/asm/asm/6.2/asm-6.2.jar (111 kB at 3.4 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-java/0.9.10/plexus-java-0.9.10.jar (39 kB at 1.1 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/thoughtworks/qdox/qdox/2.0-M9/qdox-2.0-M9.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/apache/maven/shared/maven-shared-utils/3.2.1/maven-shared-utils-3.2.1.jar (167 kB at 3.7 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-compiler-manager/2.8.4/plexus-compiler-manager-2.8.4.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.jar (61 kB at 1.2 MB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-utils/2.0.4/plexus-utils-2.0.4.jar (222 kB at 3.6 MB/s)
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-compiler-api/2.8.4/plexus-compiler-api-2.8.4.jar
+[INFO] Downloading from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-compiler-javac/2.8.4/plexus-compiler-javac-2.8.4.jar
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-compiler-manager/2.8.4/plexus-compiler-manager-2.8.4.jar (4.7 kB at 84 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-compiler-javac/2.8.4/plexus-compiler-javac-2.8.4.jar (21 kB at 373 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/org/codehaus/plexus/plexus-compiler-api/2.8.4/plexus-compiler-api-2.8.4.jar (27 kB at 459 kB/s)
+[INFO] Downloaded from google-maven-central: https://maven-central.storage-download.googleapis.com/repos/central/data/com/thoughtworks/qdox/qdox/2.0-M9/qdox-2.0-M9.jar (317 kB at 4.2 MB/s)
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/travis/build/dahmedov/imen/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.049 s
+[INFO] Finished at: 2019-10-11T18:54:18Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project imen: Fatal error compiling: error: invalid target release: 12 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+The command "eval ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V " failed. Retrying, 2 of 3.
+Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
+Maven home: /home/travis/.m2/wrapper/dists/apache-maven-3.6.0-bin/2dakv70gp803gtm5ve1ufmvttn/apache-maven-3.6.0
+Java version: 11.0.2, vendor: Oracle Corporation, runtime: /usr/local/lib/jvm/openjdk11
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-1037-gcp", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.newestuser:imen >-------------------------
+[INFO] Building imen 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ imen ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ imen ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/travis/build/dahmedov/imen/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.618 s
+[INFO] Finished at: 2019-10-11T18:54:24Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project imen: Fatal error compiling: error: invalid target release: 12 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+The command "eval ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V " failed. Retrying, 3 of 3.
+Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
+Maven home: /home/travis/.m2/wrapper/dists/apache-maven-3.6.0-bin/2dakv70gp803gtm5ve1ufmvttn/apache-maven-3.6.0
+Java version: 11.0.2, vendor: Oracle Corporation, runtime: /usr/local/lib/jvm/openjdk11
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.15.0-1037-gcp", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.newestuser:imen >-------------------------
+[INFO] Building imen 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ imen ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ imen ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /home/travis/build/dahmedov/imen/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.695 s
+[INFO] Finished at: 2019-10-11T18:54:29Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project imen: Fatal error compiling: error: invalid target release: 12 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+The command "eval ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V " failed 3 times.
+The command "./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V" failed and exited with 1 during .
+Your build has been stopped.
