@@ -10,6 +10,9 @@ import java.util.Date;
 @Controller
 public class IndexController {
 
+    /**
+     * This endpoint serves the index page.
+     */
     @GetMapping("/")
     public String index(Model model) {
 
