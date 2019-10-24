@@ -32,11 +32,6 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
@@ -62,23 +57,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
 
@@ -96,7 +74,7 @@
                 <version>3.12.0</version>
                 <executions>
                     <execution>
-                        <id>validate</id>
+                        <id>pmd-validate</id>
                         <phase>validate</phase>
                         <goals>
                             <goal>check</goal>
@@ -120,7 +98,7 @@
                 </configuration>
                 <executions>
                     <execution>
-                        <id>validate</id>
+                        <id>checkstyle-validate</id>
                         <phase>validate</phase>
                         <goals>
                             <goal>check</goal>
@@ -135,11 +113,7 @@
                 <version>0.8.4</version>
                 <executions>
                     <execution>
-                        <id>report</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
+                        <id>pre-unit-test</id>
                     </execution>
                     <execution>
                         <id>post-unit-test</id>
