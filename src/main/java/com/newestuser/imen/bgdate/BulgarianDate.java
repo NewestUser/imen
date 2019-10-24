@@ -2,6 +2,8 @@ package com.newestuser.imen.bgdate;
 
 import java.time.Year;
 import java.util.Calendar;
+
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,6 +12,18 @@ public class BulgarianDate {
     private String bulgarianDateMonth;
     private int bulgarianDateYear;
     private String bulgarianDateTypeOfYear;
+
+    public BulgarianDate(Date gregorianDate) {
+        this.bulgarianDateDay = findBulgarianDay(gregorianDate.getDay(), convertMonth(gregorianDate.getMonth(), gregorianDate.getDay()), gregorianDate.getMonth());
+        this.bulgarianDateMonth = convertMonth(gregorianDate.getMonth(), gregorianDate.getDay());
+        this.bulgarianDateYear = gregorianDate.getYear() + 4768;
+        this.bulgarianDateTypeOfYear = findYearType(this.bulgarianDateYear);
+    }
+
+
+    public BulgarianDate() {
+
+    }
 
     private static final Map<Integer, DayMonthRange> GREGORIAN_MONTH_TO_BG_MONTH = new HashMap<>() {{
         put(1, new DayMonthRange(1, 22, "Алем", "Тутом"));
@@ -72,7 +86,7 @@ public class BulgarianDate {
             if (dayMonthRange.findIsInFirstMonthPart(currentDay)) {
                 bulgarianDateDay += DAY_CONVERSION_VALUES.get(bgMonth)[0];
             } else {
-                bulgarianDateDay += DAY_CONVERSION_VALUES.get(bgMonth)[1];
+                bulgarianDateDay -= DAY_CONVERSION_VALUES.get(bgMonth)[1];
             }
         }
         if ((month > 2) && !findIsLeapYear(Year.now().getValue())) {
