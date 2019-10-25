@@ -13,11 +13,16 @@ public class BulgarianDate {
     private int bulgarianDateYear;
     private String bulgarianDateTypeOfYear;
 
-    public BulgarianDate(Date gregorianDate) {
-        this.bulgarianDateDay = findBulgarianDay(gregorianDate.getDay(), convertMonth(gregorianDate.getMonth(), gregorianDate.getDay()), gregorianDate.getMonth());
-        this.bulgarianDateMonth = convertMonth(gregorianDate.getMonth(), gregorianDate.getDay());
-        this.bulgarianDateYear = gregorianDate.getYear() + 4768;
+    public BulgarianDate(Date gregorianDate){
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(gregorianDate);
+        this.bulgarianDateDay = findBulgarianDay(calendar.get(Calendar.DAY_OF_MONTH), convertMonth(calendar.get(Calendar.MONTH) +1, calendar.get(Calendar.DAY_OF_MONTH)),calendar.get(Calendar.MONTH) +1);
+        this.bulgarianDateMonth = convertMonth(calendar.get(Calendar.MONTH) + 1, calendar.get(Calendar.DAY_OF_MONTH));
+        this.bulgarianDateYear = calendar.get(Calendar.YEAR)+ 4768;
         this.bulgarianDateTypeOfYear = findYearType(this.bulgarianDateYear);
+//        int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
+//        int monthOfYear = calendar.get(Calendar.MONTH);
+//        int year = calendar.get(Calendar.YEAR);
     }
 
 
