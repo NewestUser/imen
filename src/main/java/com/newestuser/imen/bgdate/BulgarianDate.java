@@ -8,26 +8,22 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class BulgarianDate {
-    private int bulgarianDateDay;
-    private String bulgarianDateMonth;
-    private int bulgarianDateYear;
-    private String bulgarianDateTypeOfYear;
+    private final int bulgarianDateDay;
+    private final String bulgarianDateMonth;
+    private final int bulgarianDateYear;
+    private final String bulgarianDateTypeOfYear;
 
-    public BulgarianDate(Date gregorianDate){
+    public BulgarianDate(Date gregorianDate) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(gregorianDate);
-        this.bulgarianDateDay = findBulgarianDay(calendar.get(Calendar.DAY_OF_MONTH), convertMonth(calendar.get(Calendar.MONTH) +1, calendar.get(Calendar.DAY_OF_MONTH)),calendar.get(Calendar.MONTH) +1);
+        this.bulgarianDateDay = findBulgarianDay(calendar.get(Calendar.DAY_OF_MONTH), convertMonth(calendar.get(Calendar.MONTH) + 1, calendar.get(Calendar.DAY_OF_MONTH)), calendar.get(Calendar.MONTH) + 1);
         this.bulgarianDateMonth = convertMonth(calendar.get(Calendar.MONTH) + 1, calendar.get(Calendar.DAY_OF_MONTH));
-        this.bulgarianDateYear = calendar.get(Calendar.YEAR)+ 4768;
+        this.bulgarianDateYear = calendar.get(Calendar.YEAR) + 4768;
         this.bulgarianDateTypeOfYear = findYearType(this.bulgarianDateYear);
-//        int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
-//        int monthOfYear = calendar.get(Calendar.MONTH);
-//        int year = calendar.get(Calendar.YEAR);
     }
 
-
     public BulgarianDate() {
-
+        this(new Date());
     }
 
     private static final Map<Integer, DayMonthRange> GREGORIAN_MONTH_TO_BG_MONTH = new HashMap<>() {{
@@ -107,8 +103,7 @@ public class BulgarianDate {
      * @param currentDay current day in a given gregorian month.
      * @return the converted Bulgarian month.
      */
-
-    private static String convertMonth(int month, int currentDay) {
+    private String convertMonth(int month, int currentDay) {
         if (month == 12 && currentDay == 21) {
             return "Нова година";
         }
@@ -123,8 +118,7 @@ public class BulgarianDate {
      * @param bulgarianDateYear current year according to the Bulgarian calendar.
      * @return Bulgarian type of year.
      */
-
-    private static String findYearType(int bulgarianDateYear) {
+    private String findYearType(int bulgarianDateYear) {
         return YEAR_TYPES.get(bulgarianDateYear % 12);
     }
 
@@ -134,7 +128,6 @@ public class BulgarianDate {
      * @param currentYear current year according to the Gregorian calendar.
      * @return true if the passed year is leap.
      */
-
     private static boolean findIsLeapYear(int currentYear) {
         return (currentYear % 4 == 0 && currentYear % 100 != 0) || (currentYear % 400 == 0);
     }
@@ -145,15 +138,8 @@ public class BulgarianDate {
      *
      * @return BulgarianDate object with the current date.
      */
-
-    public static BulgarianDate now() {
-        BulgarianDate bulgarianDate = new BulgarianDate();
-        bulgarianDate.bulgarianDateDay = findBulgarianDay(Calendar.getInstance().get(Calendar.DAY_OF_MONTH), bulgarianDate.bulgarianDateMonth, Calendar.getInstance().get(Calendar.MONTH) + 1);
-        bulgarianDate.bulgarianDateMonth = convertMonth(Calendar.getInstance().get(Calendar.MONTH) + 1, Calendar.getInstance().get(Calendar.DAY_OF_MONTH));
-        bulgarianDate.bulgarianDateYear = (Year.now().getValue() + 4768);
-        bulgarianDate.bulgarianDateTypeOfYear = findYearType(bulgarianDate.bulgarianDateYear);
-
-        return bulgarianDate;
+    public BulgarianDate now() {
+        return new BulgarianDate();
     }
 
     /**

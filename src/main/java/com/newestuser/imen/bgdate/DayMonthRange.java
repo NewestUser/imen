@@ -5,7 +5,6 @@ package com.newestuser.imen.bgdate;
  * Depending on which gregorian day the bulgarian month might vary.
  * Example: from 22of December up until 22nd of January it is the bulgarian month 'Алем'.
  */
-
 class DayMonthRange {
     private final int startDay;
     private final int endDay;
@@ -25,7 +24,6 @@ class DayMonthRange {
      * @param dayOfMonth the day in a given gregorian month.
      * @return the formatted Bulgarian month.
      */
-
     String getBulgarianMonth(int dayOfMonth) {
         if (startDay <= dayOfMonth && endDay >= dayOfMonth) {
             return monthInRange;
@@ -39,7 +37,6 @@ class DayMonthRange {
      * @param currentDayOfMonth the day in the gregorian month.
      * @return true if the given day is in the first part of the gregorian month.
      */
-
     boolean findIsInFirstMonthPart(int currentDayOfMonth) {
         if (startDay <= currentDayOfMonth && endDay >= currentDayOfMonth) {
             return true;
