@@ -7,16 +7,28 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * This class is responsible for calculating Bulgarian date.
+ * Depending on a given Gregorian date.
+ * Example: 1st of January 2019 is 10 Алем, 6787 Докс
+ */
 public class BulgarianDate {
     private final int bulgarianDateDay;
     private final String bulgarianDateMonth;
     private final int bulgarianDateYear;
     private final String bulgarianDateTypeOfYear;
 
+    /**
+     * Instantiate BulgarianDate object.
+     * Depending on the given Gregorian date.
+     *@param gregorianDate given Gregorian date
+     */
     public BulgarianDate(Date gregorianDate) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(gregorianDate);
-        this.bulgarianDateDay = findBulgarianDay(calendar.get(Calendar.DAY_OF_MONTH), convertMonth(calendar.get(Calendar.MONTH) + 1, calendar.get(Calendar.DAY_OF_MONTH)), calendar.get(Calendar.MONTH) + 1);
+        this.bulgarianDateDay = findBulgarianDay(calendar.get(Calendar.DAY_OF_MONTH),
+                convertMonth(calendar.get(Calendar.MONTH) + 1, calendar.get(Calendar.DAY_OF_MONTH)),
+                calendar.get(Calendar.MONTH) + 1);
         this.bulgarianDateMonth = convertMonth(calendar.get(Calendar.MONTH) + 1, calendar.get(Calendar.DAY_OF_MONTH));
         this.bulgarianDateYear = calendar.get(Calendar.YEAR) + 4768;
         this.bulgarianDateTypeOfYear = findYearType(this.bulgarianDateYear);
@@ -26,50 +38,56 @@ public class BulgarianDate {
         this(new Date());
     }
 
-    private static final Map<Integer, DayMonthRange> GREGORIAN_MONTH_TO_BG_MONTH = new HashMap<>() {{
-        put(1, new DayMonthRange(1, 22, "Алем", "Тутом"));
-        put(2, new DayMonthRange(1, 21, "Тутом", "Читем"));
-        put(3, new DayMonthRange(1, 22, "Читем", "Твирем"));
-        put(4, new DayMonthRange(1, 22, "Твирем", "Вечем"));
-        put(5, new DayMonthRange(1, 22, "Вечем", "Шехтем"));
-        put(6, new DayMonthRange(1, 21, "Шехтем", "Сетем"));
-        put(7, new DayMonthRange(1, 22, "Сетем", "Бехти"));
-        put(8, new DayMonthRange(1, 22, "Бехти", "Нунтем"));
-        put(9, new DayMonthRange(1, 20, "Нунтем", "Елем"));
-        put(10, new DayMonthRange(1, 21, "Елем", "Ениалем"));
-        put(11, new DayMonthRange(1, 20, "Ениалем", "Алтом"));
-        put(12, new DayMonthRange(1, 20, "Алтом", "Алем"));
-    }};
+    private static final Map<Integer, DayMonthRange> GREGORIAN_MONTH_TO_BG_MONTH = new HashMap<>() {
+        {
+            put(1, new DayMonthRange(1, 22, "Алем", "Тутом"));
+            put(2, new DayMonthRange(1, 21, "Тутом", "Читем"));
+            put(3, new DayMonthRange(1, 22, "Читем", "Твирем"));
+            put(4, new DayMonthRange(1, 22, "Твирем", "Вечем"));
+            put(5, new DayMonthRange(1, 22, "Вечем", "Шехтем"));
+            put(6, new DayMonthRange(1, 21, "Шехтем", "Сетем"));
+            put(7, new DayMonthRange(1, 22, "Сетем", "Бехти"));
+            put(8, new DayMonthRange(1, 22, "Бехти", "Нунтем"));
+            put(9, new DayMonthRange(1, 20, "Нунтем", "Елем"));
+            put(10, new DayMonthRange(1, 21, "Елем", "Ениалем"));
+            put(11, new DayMonthRange(1, 20, "Ениалем", "Алтом"));
+            put(12, new DayMonthRange(1, 20, "Алтом", "Алем"));
+        }
+    };
 
-    private static Map<Integer, String> YEAR_TYPES = new HashMap<>() {{
-        put(0, "Верени");
-        put(1, "Дилом");
-        put(2, "Имен");
-        put(3, "Теку");
-        put(4, "Бечин");
-        put(5, "Тох");
-        put(6, "Етх");
-        put(7, "Докс");
-        put(8, "Сомор");
-        put(9, "Шегор");
-        put(10, "Барс");
-        put(11, "Дван");
-    }};
+    private static Map<Integer, String> YEAR_TYPES = new HashMap<>() {
+        {
+            put(0, "Верени");
+            put(1, "Дилом");
+            put(2, "Имен");
+            put(3, "Теку");
+            put(4, "Бечин");
+            put(5, "Тох");
+            put(6, "Етх");
+            put(7, "Докс");
+            put(8, "Сомор");
+            put(9, "Шегор");
+            put(10, "Барс");
+            put(11, "Дван");
+        }
+    };
 
-    private static Map<String, Integer[]> DAY_CONVERSION_VALUES = new HashMap<>() {{
-        put("Алем", new Integer[]{9, 22});
-        put("Тутом", new Integer[]{9, 21});
-        put("Читем", new Integer[]{8, 22});
-        put("Твирем", new Integer[]{9, 22});
-        put("Вечем", new Integer[]{8, 22});
-        put("Шехтем", new Integer[]{9, 21});
-        put("Сетем", new Integer[]{9, 22});
-        put("Бехти", new Integer[]{9, 21});
-        put("Нунтем", new Integer[]{8, 20});
-        put("Елем", new Integer[]{10, 21});
-        put("Ениалем", new Integer[]{10, 20});
-        put("Алтом", new Integer[]{10, 21});
-    }};
+    private static Map<String, Integer[]> DAY_CONVERSION_VALUES = new HashMap<>() {
+        {
+            put("Алем", new Integer[]{9, 22});
+            put("Тутом", new Integer[]{9, 21});
+            put("Читем", new Integer[]{8, 22});
+            put("Твирем", new Integer[]{9, 22});
+            put("Вечем", new Integer[]{8, 22});
+            put("Шехтем", new Integer[]{9, 21});
+            put("Сетем", new Integer[]{9, 22});
+            put("Бехти", new Integer[]{9, 21});
+            put("Нунтем", new Integer[]{8, 20});
+            put("Елем", new Integer[]{10, 21});
+            put("Ениалем", new Integer[]{10, 20});
+            put("Алтом", new Integer[]{10, 21});
+        }
+    };
 
     /**
      * Converts the passed gregorian day of the month to the day according to the Bulgarian calendar.
@@ -90,7 +108,7 @@ public class BulgarianDate {
                 bulgarianDateDay -= DAY_CONVERSION_VALUES.get(bgMonth)[1];
             }
         }
-        if ((month > 2) && !findIsLeapYear(Year.now().getValue())) {
+        if (month > 2 && !findIsLeapYear(Year.now().getValue())) {
             bulgarianDateDay -= 1;
         }
         return bulgarianDateDay;
@@ -129,7 +147,7 @@ public class BulgarianDate {
      * @return true if the passed year is leap.
      */
     private static boolean findIsLeapYear(int currentYear) {
-        return (currentYear % 4 == 0 && currentYear % 100 != 0) || (currentYear % 400 == 0);
+        return currentYear % 4 == 0 && currentYear % 100 != 0 || currentYear % 400 == 0;
     }
 
     /**
@@ -145,7 +163,7 @@ public class BulgarianDate {
     /**
      * Provides appropriate format for the passed BulgarianDate object.
      *
-     * @param bulgarianDate
+     * @param bulgarianDate converted Bulgarian date
      * @return the formatted Bulgarian month.
      */
     public String format(BulgarianDate bulgarianDate) {
