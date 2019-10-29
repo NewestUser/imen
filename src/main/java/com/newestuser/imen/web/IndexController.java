@@ -12,6 +12,9 @@ import java.util.Date;
 @Controller
 public class IndexController {
 
+    /**
+     * This endpoint serves the index page.
+     */
     @GetMapping("/")
     public String index(Model model) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("EEEE, MMMM d, yyyy");
