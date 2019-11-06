@@ -147,7 +147,7 @@ public class BulgarianDate {
      * @return true if the passed year is leap.
      */
     private static boolean findIsLeapYear(int currentYear) {
-        return currentYear % 4 == 0 && currentYear % 100 != 0 || currentYear % 400 == 0;
+        return currentYear % 4 == 0;
     }
 
     /**
