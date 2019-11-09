@@ -2,7 +2,6 @@ package com.newestuser.imen.bgdate;
 
 import java.time.Year;
 import java.util.Calendar;
-
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -21,7 +20,8 @@ public class BulgarianDate {
     /**
      * Instantiate BulgarianDate object.
      * Depending on the given Gregorian date.
-     *@param gregorianDate given Gregorian date
+     *
+     * @param gregorianDate given Gregorian date
      */
     public BulgarianDate(Date gregorianDate) {
         Calendar calendar = Calendar.getInstance();
