@@ -27,12 +27,11 @@ public class BulgarianDateTest {
     }
 
     @Test
-    public void checkLeapYear(){
+    public void checkLeapYear() {
         Date gregorianDate = secondOfJanuary(2020);
         BulgarianDate bulgarianDate = new BulgarianDate(gregorianDate);
         String formatedDate = bulgarianDate.format(bulgarianDate);
         assertEquals(formatedDate, "11 Алем, 6788 Сомор");
-
     }
 
     private Date secondOfJanuary(int year) {
@@ -44,12 +43,11 @@ public class BulgarianDateTest {
     }
 
     @Test
-    public void checkLeapYearSecondTest(){
+    public void checkLeapYearSecondTest() {
         Date gregorianDate = thirdOfMarch(1800);
         BulgarianDate bulgarianDate = new BulgarianDate(gregorianDate);
         String formatedDate = bulgarianDate.format(bulgarianDate);
         assertEquals(formatedDate, "10 Читем, 6568 Бечин");
-
     }
 
     private Date thirdOfMarch(int year) {
@@ -59,5 +57,4 @@ public class BulgarianDateTest {
         calendar.set(Calendar.DAY_OF_MONTH, 3);
         return calendar.getTime();
     }
-
 }
