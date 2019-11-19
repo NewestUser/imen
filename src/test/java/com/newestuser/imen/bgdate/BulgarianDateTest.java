@@ -11,50 +11,33 @@ public class BulgarianDateTest {
 
     @Test
     public void formatGregorianDatetoBulgarianDate() {
-        Date gregorianDate = firstOfJanuary(2019);
-
+        Date gregorianDate = newDate(1, Calendar.JANUARY, 2019);
         BulgarianDate bulgarianDate = new BulgarianDate(gregorianDate);
         String formatedDate = bulgarianDate.format(bulgarianDate);
         assertEquals(formatedDate, "10 Алем, 6787 Докс");
     }
 
-    private Date firstOfJanuary(int year) {
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.YEAR, year);
-        calendar.set(Calendar.MONTH, Calendar.JANUARY);
-        calendar.set(Calendar.DAY_OF_MONTH, 1);
-        return calendar.getTime();
-    }
-
     @Test
     public void checkLeapYear() {
-        Date gregorianDate = secondOfJanuary(2020);
+        Date gregorianDate = newDate(2, Calendar.JANUARY, 2020);
         BulgarianDate bulgarianDate = new BulgarianDate(gregorianDate);
         String formatedDate = bulgarianDate.format(bulgarianDate);
         assertEquals(formatedDate, "11 Алем, 6788 Сомор");
     }
 
-    private Date secondOfJanuary(int year) {
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.YEAR, year);
-        calendar.set(Calendar.MONTH, Calendar.JANUARY);
-        calendar.set(Calendar.DAY_OF_MONTH, 2);
-        return calendar.getTime();
-    }
-
     @Test
-    public void checkLeapYearSecondTest() {
-        Date gregorianDate = thirdOfMarch(1800);
+    public void checkNonCenturialLeapYear() {
+        Date gregorianDate = newDate(3, Calendar.MARCH, 1800);
         BulgarianDate bulgarianDate = new BulgarianDate(gregorianDate);
         String formatedDate = bulgarianDate.format(bulgarianDate);
         assertEquals(formatedDate, "10 Читем, 6568 Бечин");
     }
 
-    private Date thirdOfMarch(int year) {
+    private Date newDate(int day, int month, int year) {
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, year);
-        calendar.set(Calendar.MONTH, Calendar.MARCH);
-        calendar.set(Calendar.DAY_OF_MONTH, 3);
+        calendar.set(Calendar.MONTH, month);
+        calendar.set(Calendar.DAY_OF_MONTH, day);
         return calendar.getTime();
     }
 }
