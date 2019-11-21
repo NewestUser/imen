@@ -2,7 +2,6 @@ package com.newestuser.imen.bgdate;
 
 import java.time.Year;
 import java.util.Calendar;
-
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -21,7 +20,8 @@ public class BulgarianDate {
     /**
      * Instantiate BulgarianDate object.
      * Depending on the given Gregorian date.
-     *@param gregorianDate given Gregorian date
+     *
+     * @param gregorianDate given Gregorian date
      */
     public BulgarianDate(Date gregorianDate) {
         Calendar calendar = Calendar.getInstance();
@@ -147,7 +147,13 @@ public class BulgarianDate {
      * @return true if the passed year is leap.
      */
     private static boolean findIsLeapYear(int currentYear) {
-        return currentYear % 4 == 0 && currentYear % 100 != 0 || currentYear % 400 == 0;
+        if (currentYear % 4 == 0 && currentYear % 100 != 0) {
+            return true;
+        }
+        if (currentYear % 100 == 0 && currentYear % 400 == 0) {
+            return true;
+        }
+        return false;
     }
 
     /**
